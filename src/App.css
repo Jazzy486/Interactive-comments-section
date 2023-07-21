@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    --dark-blue: hsl(212, 24%, 26%);
+    --grayish-blue: hsl(211, 10%, 45%);
+    --light-gray: hsl(223, 19%, 93%);
+    --very-light-gray: hsl(228, 33%, 97%);
+    --pale-red: hsl(357, 100%, 86%);
+    --light-grayish-blue: hsl(239, 57%, 85%);
+    --soft-red:hsl(358, 79%, 66%);
+    --moderate-blue:hsl(238, 40%, 52%);
+}
+
+body{
+    background-color: var(--light-gray);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 55%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.new-comment-img{
+    width: 50px;
+    position: relative;
+    bottom: 48px;
+}
+
+textarea{
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--light-gray);
+    }
+
+    textarea:focus{
+        outline: 2px solid var(--moderate-blue);
+    }
+
+::placeholder{
+font-size: 14px;
+font-weight: 400;
+}
+
+.new-comment{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    padding-right: 0;
+}
+
+.new-comment button{
+    width: 13%;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--moderate-blue);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    position: relative;
+    bottom: 51px;
+}
+
+.new-comment button:hover{
+    cursor: pointer;
+}
+
+.comment{
+    width: 100%;
+    display: flex;
+}
+
+.score-div{
+    width: 15%;
+}
+
+.comment-content{
+    width: 85%;
+}
+
+.credentials{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+
+.credentials h4{
+    color: var(--dark-blue);
+}
+
+.credentials h5{
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.reply-cta{
+    display: flex;
+    gap: 5px;
+    position: relative;
+    left: 43.9%;
+    color: var(--moderate-blue);
+    font-weight: 500;
+}
+
+.existing-img{
+    width: 50px;
+}
+
+.comment-text{
+    padding: 20px;
+    padding-top: 0;
+    padding-left: 0;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+
+}
+
+
+.score-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-counter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--very-light-gray);
+    border-radius: 12px;
+}
+
+.comment-score-count{
+    color: var(--moderate-blue);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.score-counter a{
+    text-decoration: none;
+    color: var(--light-grayish-blue);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        width: 90%;
+        padding: 0;
+        padding-bottom: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%;
+    }
+
+    .new-comment{
+        width: 500px;
+    }
+
+    textarea{
+        display: block;
+        width: 315px;
+        height: 8em;
+    }
+
+    .new-comment-img{
+        position: relative;
+        top: 120px;
+        left: 65px;
+        margin-bottom: 11%;
+        
+    }
+
+    .new-comment button{
+        position: relative;
+        top: 120px;
+        right: 90px;
+        margin-bottom: 10.5%;
+        padding-right: 11%;
+    }
+
+    .reply-cta{
+        top: 11.9em;
+        left: -90px;
+}
+
+    .score-counter{
+        position: relative;
+        flex-direction: row;
+        top: 55%;
+        left: 300%;
+    }
+
+    .comment-content{
+        width: 95%;
+        margin-left: 1%;
+    }
+    .score-div{
+        width: 5%;
+    }
+
+    .credentials h5{
+        width: 100px;
+    }
+
+}
+    
